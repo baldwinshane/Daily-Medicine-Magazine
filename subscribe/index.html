@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Subscribe — Daily Medicine Magazine</title>
+  <link rel="stylesheet" href="/assets/css/main.css"/>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background: linear-gradient(to bottom, #0d0d0d, #1a1a1a);
+      color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      padding: 2rem;
+      text-align: center;
+      border-bottom: 1px solid #333;
+    }
+    .header h1 {
+      color: #ffcc00;
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .intro {
+      max-width: 700px;
+      margin: 2rem auto;
+      text-align: center;
+      line-height: 1.6;
+    }
+    .pricing {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin: 3rem auto;
+      max-width: 900px;
+    }
+    .plan {
+      background: #222;
+      border: 1px solid #444;
+      border-radius: 12px;
+      padding: 2rem;
+      width: 280px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .plan:hover {
+      transform: scale(1.03);
+    }
+    .plan h2 {
+      color: #00bfff;
+      margin-bottom: 0.5rem;
+    }
+    .plan p {
+      color: #ccc;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+    .plan .price {
+      font-size: 1.8rem;
+      color: #ffcc00;
+      margin-bottom: 1.5rem;
+    }
+    .plan button {
+      background: #00bfff;
+      color: #fff;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.85rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Subscribe to Daily Medicine</h1>
+    <p>Get your monthly dose of sound therapy, cultural glitch prophecy, and psychedelic print rebellion.</p>
+  </div>
+
+  <div class="intro">
+    <p>Each issue is a handcrafted chronicle of sonic medicine, collage art, and cosmic commentary. Subscriptions help us keep publishing independent, underground, and 100% reader-powered.</p>
+  </div>
+
+  <section class="pricing">
+    <div class="plan">
+      <h2>Digital Dose</h2>
+      <p>Monthly zine access + archival back issues (PDF)</p>
+      <div class="price">$5/mo</div>
+      <button onclick="subscribeTier('digital')">Subscribe</button>
+    </div>
+    <div class="plan">
+      <h2>Print + Digital</h2>
+      <p>Digital access plus one limited edition print every two months</p>
+      <div class="price">$12/mo</div>
+      <button onclick="subscribeTier('print')">Subscribe</button>
+    </div>
+    <div class="plan">
+      <h2>Patron Tier</h2>
+      <p>All access + name in print + exclusive merch drop codes</p>
+      <div class="price">$22/mo</div>
+      <button onclick="subscribeTier('patron')">Subscribe</button>
+    </div>
+  </section>
+
+  <div class="footer">
+    © 2025 Daily Medicine Magazine. All rights reserved. Powered by readers, not algorithms.
+  </div>
+
+  <script src="/assets/js/subscribe.js"></script>
+</body>
+</html>
